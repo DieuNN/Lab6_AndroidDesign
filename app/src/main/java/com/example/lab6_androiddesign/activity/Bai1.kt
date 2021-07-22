@@ -11,10 +11,5 @@ class Bai1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_bai1)
 
-//        val fragmentTransaction = supportFragmentManager.beginTransaction()
-//        fragmentTransaction.add(R.id.fragment_container, FragmentLeft1())
-//        fragmentTransaction.commit()
-
-
     }
 }

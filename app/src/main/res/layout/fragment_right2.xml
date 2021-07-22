@@ -3,16 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.FragmentRight1"
+    tools:context=".fragment.FragmentRight2"
     android:background="@color/teal_200"
-    android:id="@+id/fragment_right1"
-
-    >
+    android:gravity="center">
 
     <TextView
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Right fragment" />
+        android:id="@+id/textview_fragment_right2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="8pt"
+        android:text="Chữ bạn nhập sẽ ở đây" />
 
 </LinearLayout>
