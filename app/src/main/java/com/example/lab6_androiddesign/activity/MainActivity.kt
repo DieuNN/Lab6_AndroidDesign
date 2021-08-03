@@ -3,8 +3,13 @@ package com.example.lab6_androiddesign.activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import com.example.lab6_androiddesign.R
+import com.example.lab6_androiddesign.adapter.ProductAdapter
+import com.example.lab6_androiddesign.model.Product
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_test.*
+import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,19 +24,13 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, Bai2::class.java))
         }
 
-
         button_bai3.setOnClickListener {
             startActivity(Intent(this, Bai3::class.java))
         }
 
         button_bai4.setOnClickListener {
-            startActivity(Intent(this, Bai4::class.java))
+            startActivity(Intent(this, SanPhamActivity::class.java))
         }
-
-        button_bai5.setOnClickListener {
-            startActivity(Intent(this, Bai5::class.java))
-        }
-
-
     }
+
 }

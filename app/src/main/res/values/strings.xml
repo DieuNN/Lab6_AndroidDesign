@@ -5,4 +5,6 @@
     <string name="home">Home</string>
     <string name="favorite">Favorite</string>
     <string name="clock">Clock</string>
+    <string name="product">Sản phẩm</string>
+    <string name="category">Danh mục</string>
 </resources>

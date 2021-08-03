@@ -7,18 +7,25 @@ import androidx.viewpager2.adapter.FragmentStateAdapter
 import com.example.lab6_androiddesign.fragment.ClockFragment
 import com.example.lab6_androiddesign.fragment.FavoriteFragment
 import com.example.lab6_androiddesign.fragment.HomeFragment
+import java.util.ArrayList
 
-class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) :
+class ViewPagerAdapter(
+    fragmentManager: FragmentManager,
+    lifecycle: Lifecycle,
+    private val fragmentList: ArrayList<Fragment>,
+    private val fragmentTitleList: ArrayList<String>
+) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun createFragment(position: Int): Fragment {
-        when (position) {
-            1 -> return FavoriteFragment()
-            2 -> return ClockFragment()
-        }
-        return HomeFragment()
+        return fragmentList[position]
     }
 
     override fun getItemCount(): Int {
-        return 3
+        return fragmentList.size
+    }
+
+    fun addFragment(fragment: Fragment, title: String) {
+        fragmentList.add(fragment)
+        fragmentTitleList.add(title)
     }
 }
